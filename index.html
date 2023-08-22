@@ -14,7 +14,178 @@
   </header>
 
   <main class="main">
+    <section class="hero">
+      <div class="container hero__container">
+        <h1 class="hero__title">Fin your
+          <span class="hero__title--blue-text">dream job</span>
+        </h1>
+      </div>
+    </section>
 
+    <div class="vacancies" id="vacancies">
+      <div class="container vacancies__container">
+        <section class="vacancies__filter filter">
+          <h2 class="filter__title">Filter</h2>
+
+          <form class="filter__form">
+            <fieldset class="filter__fieldset">
+              <legend class="filter__legend">City</legend>
+
+              <select name="city" id="city" class="filter__select">
+                <option value="">Choose city</option>
+                <option>Тверь</option>
+                <option>Томск</option>
+                <option>Саратов</option>
+                <option>Уфа</option>
+                <option>Артемовск</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="filter__fieldset">
+              <legend class="filter__legend">Salary</legend>
+              <div class="filter__range">
+                <input 
+                  type="number" 
+                  name="pay-from" 
+                  placeholder="from" 
+                  class="filter__input"
+                >
+
+                <input 
+                  type="number" 
+                  name="pay-to" 
+                  placeholder="to" 
+                  class="filter__input"
+                >
+              </div>
+            </fieldset>
+            
+            <div class="filter__checkboxes">
+              <fieldset class="filter__fieldset">
+                <legend class="filter__legend">Format</legend>
+
+                <label class="filter__label checkbox">
+                  <input 
+                    type="checkbox" 
+                    class="checkbox__input"
+                    name="format"
+                    value="office"
+                  >Office
+                </label>
+
+                <label class="filter__label checkboxes">
+                  <input 
+                    type="checkbox" 
+                    class="checkbox__input"
+                    name="format"
+                    value="remote"
+                  >Remote
+                </label>
+
+                <label class="filter__label checkboxes">
+                  <input 
+                    type="checkbox" 
+                    class="checkbox__input"
+                    name="format"
+                    value="flexible"
+                  >Flexible
+                </label>
+              </fieldset>
+
+              <fieldset class="filter__fieldset">
+                <legend class="filter__legend">Work experience</legend>
+
+                <label class="filter__label checkbox">
+                  <input 
+                    type="checkbox"
+                    class="checkbox__input"
+                    name="experience"
+                    value="Doesn't matter"
+                  >Doesn't matter
+                </label>
+                  
+                <label class="filter__label checkboxes">
+                  <input 
+                    type="checkbox"
+                    class="checkbox__input"
+                    name="experience"
+                    value="Without experience"
+                  >Without experience
+                </label>
+                  
+                <label class="filter__label checkboxes">
+                  <input 
+                    type="checkbox"
+                    class="checkbox__input"
+                    name="experience"
+                    value="From 1 year to 3 years"
+                  >From 1 year to 3 years
+                </label>
+                  
+                <label class="filter__label checkboxes">
+                  <input 
+                    type="checkbox"
+                    class="checkbox__input"
+                    name="experience"
+                    value="From 3 years"
+                  >From 3 years
+                </label>
+              </fieldset>
+
+              <fieldset class="filter__fieldset">
+                <legend class="filter__legend">Employment</legend>
+
+                <label class="filter__label checkboxes">
+                  <input 
+                    type="checkbox" 
+                    class="checkbox__input"
+                    name="type"
+                    value="Full time"
+                  >Full time
+                </label>
+                
+                <label class="filter__label checkboxes">
+                  <input 
+                    type="checkbox" 
+                    class="checkbox__input"
+                    name="type"
+                    value="Part time"
+                  >Part time
+                </label>
+
+                <label class="filter__label checkboxes">
+                  <input 
+                    type="checkbox" 
+                    class="checkbox__input"
+                    name="type"
+                    value="Internship"
+                  >Internship
+                </label>
+                  
+                <label class="filter__label checkboxes">
+                  <input 
+                    type="checkbox" 
+                    class="checkbox__input"
+                    name="type"
+                    value="Project work"
+                  >Project work
+                </label>
+              </fieldset>
+            </div>
+
+            <div class="filter__buttons">
+              <button class="filter__button filter__button--apply" type="submit">Apply</button>
+              
+              <button class="filter__button filter__button--reset" type="reset">Clear</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="vacancies__cards">
+
+        </section>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">
